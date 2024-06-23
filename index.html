@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Main body start -->
+    <main class="main">
+      <h1>Portfolio Generator Form</h1>
+
+      <!-- Form Div start -->
+      <div class="formDiv">
+        <!-- Form start -->
+        <form class="form">
+          <!-- Form username section -->
+          <label for="firstName"
+            >User Information
+            <small>(necessary to fill each blank)</small></label
+          >
+          <div class="formName">
+            <input
+              autocomplete="off"
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="First Name"
+            />
+            <input
+              autocomplete="off"
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="Last Name"
+            />
+          </div>
+          <input
+            autocomplete="off"
+            type="text"
+            name="profession"
+            id="profession"
+            placeholder="profession (e.g. Frontend Web Developer)"
+          />
+          <input
+            autocomplete="off"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail (e.g. Example123@gmail.com)"
+          />
+          <input
+            autocomplete="off"
+            type="tel"
+            name="phone"
+            id="phone"
+            minlength="10"
+            maxlength="14"
+            placeholder="Phone Number (e.g. +91 9090909090)"
+          />
+          <input
+            autocomplete="off"
+            type="text"
+            name="resume"
+            id="resume"
+            placeholder="Resume Link (e.g. https://drive.google.com/drive/folders/)"
+          />
+          <input
+            autocomplete="off"
+            type="text"
+            name="imageLink"
+            id="imageLink"
+            placeholder="Give image link or choose image from file (recommended)"
+          />
+          <input
+            type="file"
+            name="image"
+            id="image"
+            accept="image/*"
+            placeholder="Choose file for Profile"
+          />
+
+          <!-- Form social media section -->
+          <label for="firstName">
+            Social Media <small>(can be blank if not available)</small></label
+          >
+          <input
+            autocomplete="off"
+            type="text"
+            name="facebook"
+            id="facebook"
+            placeholder="Facebook Link (e.g. https://www.facebook.com/example.123/)"
+          />
+          <input
+            autocomplete="off"
+            type="text"
+            name="twitter"
+            id="twitter"
+            placeholder="Twitter Link (e.g. https://x.com/example_123/)"
+          />
+          <input
+            autocomplete="off"
+            type="text"
+            name="instagram"
+            id="instagram"
+            placeholder="Instragram Link (e.g. https://www.instagram.com/example.123/)"
+          />
+          <input
+            autocomplete="off"
+            type="text"
+            name="linkedin"
+            id="linkedin"
+            placeholder="linkedin Link (e.g. https://www.linkedin.com/in/example-123/)"
+          />
+          <input type="submit" value="Generate Portfolio" id="submitBtn" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
