@@ -15,6 +15,7 @@ const instagram = document.querySelector("#instagram");
 const linkedin = document.querySelector("#linkedin");
 const allInp = document.querySelectorAll("input");
 
+// function for validating form
 function formValidation() {
   const firstNameVal = firstName.value.trim().split(" ").join("");
   const lastNameVal = lastName.value.trim().split(" ").join("");
@@ -123,7 +124,6 @@ function formValidation() {
 
 // updating user information to local storage & Re-directing to user Generated portfolio
 if (isvalid){
-    localStorage.setItem("UserInfo", JSON.stringify(userInfo));
     console.log("succesfull");
     window.location.href = "portfolio.html";
 }else{
@@ -157,7 +157,7 @@ let userInfo = JSON.parse(localStorage.getItem("UserInfo")) || {};
 allInp.forEach((allInpVal) => {
     allInpVal.addEventListener("input", (e) => {
         userInfo[allInpVal.id] = allInpVal.value
+        localStorage.setItem("UserInfo", JSON.stringify(userInfo))
     })
 
-    localStorage.setItem("UserInfo", JSON.stringify(userInfo))
 })
