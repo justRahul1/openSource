@@ -18,11 +18,12 @@ body {
 
 .my-text {
     color: #ffffff;
-
+    font-size: 3rem;
 }
 
 .services-text {
     color: #59b2f4;
+    font-size: 3rem;
 }
 
 /* Roadmap Styling  Ends*/
@@ -38,13 +39,22 @@ p {
 
 /* Topography Styling Ends*/
 
+/* Whole Container of Services  */
+.container-services {
+    margin: 0 auto;
+    padding: 44px 0px;
+    max-width: 1500px;
+}
+
+/* Whole Container of Services  Ends */
+
 /* Main Services Container Styling */
 
 .servicescontainer {
     margin-top: 25px;
     display: flex;
-    justify-content: space-between;
     padding: 0px 10%;
+    gap: 25px;
 }
 
 
