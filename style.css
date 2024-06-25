@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: #171f36;
+}
+
+/* Roadmap Styling */
+
+.roadmap {
+    margin: 50px 0px 50px 10%;
+
+}
+
+.my-text {
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+.services-text {
+    color: #59b2f4;
+    font-size: 3rem;
+}
+
+/* Roadmap Styling  Ends*/
+
+/* Topography Styling */
+
+h1,
+p {
+    color: white;
+    text-align: center;
+}
+
+
+/* Topography Styling Ends*/
+
+/* Whole Container of Services  */
+.container-services {
+    margin: 0 auto;
+    padding: 44px 0px;
+    max-width: 1500px;
+}
+
+/* Whole Container of Services  Ends */
+
+/* Main Services Container Styling */
+
+.servicescontainer {
+    margin-top: 25px;
+    display: flex;
+    padding: 0px 10%;
+    gap: 25px;
+}
+
+
+/* Main Services Container Styling Ends */
+
+/* Services Icon Styling */
+.serviceico {
+    color: #59b2f4;
+    font-size: 75px;
+    margin-bottom: 0px;
+}
+
+/* Services Icon Styling Ends */
+
+/* Service Card Styling */
+
+.service {
+    width: 29%;
+    border: 2px #171f36 solid;
+    background-color: #091330;
+    border-radius: 25px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: border-color 0.3s ease;
+}
+
+/* Service Card  Hover Styling  */
+
+.service:hover {
+    border-color: #59b2f4;
+}
+
+/* Service Card  Hover Styling Ends  */
+
+/* Service card  button styling */
+
+.service button {
+    color: #171f36;
+    background-color: #59b2f4;
+    border-radius: 35px;
+    width: 140px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Service card  button styling ends*/
+
+/* Service card styling  Ends */
+
+
+
+/* Browser Site Mobile Option Media Query or Responsiveness */
+@media (min-width:850px) and (max-width:992px) {
+
+    /* Main container styling  */
+    .servicescontainer {
+        padding: 0px 5%;
+    }
+
+    /* Main COntainer styling ends */
+
+    /* Service Card stying */
+    .service {
+        width: 28%;
+    }
+}
+
+/* Service Card stying ends*/
+
+/* Browser Site Mobile Option Media Query or Responsiveness Ends */
+
+@media (max-width:768px) {
+
+    /* Main container styling  */
+    .servicescontainer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px 5%;
+    }
+
+    /* Main container styling ends  */
+
+    /* Service Card stying */
+    .service {
+        width: 90%;
+    }
+
+    /* Service Card stying  ends*/
+}
+
+@media (max-width:320px) {
+
+    /* Main container styling  */
+    .servicescontainer {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0px 5%;
+    }
+
+    /* Main container styling  ends */
+
+    /* Service Card stying  */
+    .service {
+        width: 85%;
+    }
+}
+
+/* Service Card stying  ends*/
