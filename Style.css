@@ -7,7 +7,7 @@
 
 .container {
     padding: 48px 0;
-    background: rgb(15, 15, 74);
+    background:  #171f36;
     margin: 0 auto;
     text-align: center;
     max-width: 2000px;
@@ -31,7 +31,7 @@
 }
 
 span {
-    color: skyblue;
+    color: #59b2f4 ;
 }
 
 
@@ -41,7 +41,7 @@ input {
     width: 40%;
     border: none;
     border-radius: 7px;
-    background: #323c83;
+    background: #303d62;
     color: white;
 }
 
@@ -49,7 +49,7 @@ textarea {
     margin: 10px;
     height: 300px;
     width: 82%;
-    background: #323c83;
+    background: #303d62;
     color: white;
     border: none;
     border-radius: 7px;
@@ -70,4 +70,18 @@ textarea {
     background: rgb(1, 132, 184);
     color: white;
     border: 1px solid rgb(22, 145, 193);
+}
+
+@media screen and (max-width : 500px){
+    .container-sm{
+        width: 90%;
+    }
+    input{
+        width: 100%;
+        margin: 5px;
+    }
+    textarea{
+        width: 100%;
+        margin: 5px;
+    }
 }
