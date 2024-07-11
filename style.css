@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: #181f35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.about-wrapper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #252b43;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-img {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.peaky-blinders {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1 1 60%;
+    padding: 20px;
+    color: white;
+}
+
+.inner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-header {
+    margin-bottom: 20px;
+}
+
+.heading-about-me {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.heading-about-me span {
+    color: rgb(93, 93, 170);
+}
+
+.web-developer {
+    font-size: 1.5em;
+}
+
+.paragraph-about-me {
+    margin-bottom: 20px;
+}
+
+.small-paragraph {
+    margin-bottom: 20px;
+}
+
+.more-details {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #59b2f4;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1025px) {
+    .about-header {
+        text-align: left;
+    }
+
+    .paragraph-about-me {
+        text-align: left;
+    }
+
+    .about-text {
+        padding: 20px;
+    }
+
+    .heading-about-me {
+        font-size: 1.8em;
+    }
+
+    .web-developer {
+        font-size: 1.3em;
+    }
+
+    .more-details {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 769px) {
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text,
+    .about-img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .heading-about-me {
+        font-size: 1.6em;
+    }
+
+    .web-developer {
+        font-size: 1.2em;
+    }
+
+    .more-details {
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 426px) {
+    .heading-about-me {
+        font-size: 1.4em;
+    }
+
+    .web-developer {
+        font-size: 1em;
+    }
+
+    .small-paragraph {
+        font-size: 0.9em;
+    }
+
+    .more-details {
+        padding: 6px 12px;
+    }
+}
